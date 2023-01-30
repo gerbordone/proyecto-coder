@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ESTILO AL BODY Y FUENTE GENERAL */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: 25px;
+    background-color: black;
+    color: darkgray;
+}
+
+/* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL */
+header {
+    background-color: black;
+    border-bottom: 4px white solid;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 240px;
+}
+
+/* ESCONDIENDO EL H1 */
+h1 {
+    visibility: hidden;
+}
+
+/* ESTILO A LOS LINKS */
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.397);
+}
+
+/* ESTILO A LOS LINKS DEL NAV */
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F3FCFC;
+}
+
+/* ITEMS DE LA LISTA DE LINKS DEL NAV */
+nav li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* ACÁ CENTRANDO TODOS LOS TEXTOS DE CONTENIDO PRINCIPAL Y SEPARANDO DEL HEADER Y FOOTER */
+main {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    border-top: 4px white solid;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
