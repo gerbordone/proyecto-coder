@@ -14,13 +14,17 @@ body {
     color: darkgray;
 }
 
-/* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL */
+/* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL Y ACOMODANDO LOGO Y NAV CON FLEX */
 header {
     background-color: black;
     border-bottom: 4px white solid;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* ACHICANDO UN POCO EL LOGO QUE CONSEGUÍ */
 .logo {
     height: 100px;
     width: 240px;
@@ -45,6 +49,11 @@ nav a {
     color: #F3FCFC;
 }
 
+/* SEPARANDO UN POCO EL NAV DEL BORDE */
+nav {
+    margin-right: 50px;
+}
+
 /* ITEMS DE LA LISTA DE LINKS DEL NAV */
 nav li {
     display: inline-block;
@@ -53,7 +62,18 @@ nav li {
 }
 
 /* ACÁ CENTRANDO TODOS LOS TEXTOS DE CONTENIDO PRINCIPAL Y SEPARANDO DEL HEADER Y FOOTER */
-main {
+.mainIndex {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 720px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainHistoria {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -68,4 +88,23 @@ footer {
 
 footer ul li {
     list-style-type: none;
+}
+
+/* ESTILO Y FLEX A LOS PÁRRAFOS HISTORIA */
+.historia1 {
+    height: 600px;
+    width: 450px;
+    border: 1px white solid;
+}
+
+.historia2 {
+    height: 400px;
+    width: 600px;
+    border: 1px white solid;
+}
+
+.historia3 {
+    height: 400px;
+    width: 600px;
+    border: 1px white solid;
 }
