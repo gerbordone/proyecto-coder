@@ -1,3 +1,4 @@
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
@@ -32,7 +33,7 @@ header {
 
 /* ESCONDIENDO EL H1 */
 h1 {
-    visibility: hidden;
+    display: none;
 }
 
 /* ESTILO A LOS LINKS */
@@ -61,22 +62,37 @@ nav li {
     padding: 5px;
 }
 
-/* ACÁ CENTRANDO TODOS LOS TEXTOS DE CONTENIDO PRINCIPAL Y SEPARANDO DEL HEADER Y FOOTER */
+/* ACÁ CENTRANDO EL BOTÓN DEL INDEX CON FLEX Y SEPARANDO DEL HEADER Y FOOTER. AGREANDO IMÁGEN DE FONDO */
 .mainIndex {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
-    height: 720px;
-    width: 600px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4GJESMZCFFDWRPHQ2YNZGFGS4I.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA */
 .mainHistoria {
+    font-weight: 700;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    height: 600px;
+    /* background-image: url(../img/fondo2.jpg); */
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "historia1 historia2"
+    "historia3 historia3"
+    ;
 }
 
 /* FOOTER */
@@ -90,21 +106,42 @@ footer ul li {
     list-style-type: none;
 }
 
-/* ESTILO Y FLEX A LOS PÁRRAFOS HISTORIA */
+/* PÁRRAFOS HISTORIA */
 .historia1 {
-    height: 600px;
-    width: 450px;
-    border: 1px white solid;
+    grid-area: historia1;
 }
 
 .historia2 {
-    height: 400px;
-    width: 600px;
-    border: 1px white solid;
+    grid-area: historia2;
 }
 
 .historia3 {
-    height: 400px;
-    width: 600px;
-    border: 1px white solid;
+    grid-area: historia3;
+}
+
+/* ESTILO AL BOTÓN DEL MAIN + TRANSFORMACIÓN Y TRANSICIÓN */
+.boton {
+    color: darkgray;
+    padding: 12px 24px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top right, black, #2B2B2B, #535353, #8F8E8E);
+    border: 0;
+    border-radius: 30px;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.boton:active {
+    transform: translateY(3px);
+}
+
+/* CORRIGIENDO UN PADDING IZQ QUE ME METIÓ EL BS NO SE POR QUÉ */
+.redes {
+    padding: 0;
 }
