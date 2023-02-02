@@ -27,8 +27,9 @@ header {
 
 /* ACHICANDO UN POCO EL LOGO QUE CONSEGUÍ */
 .logo {
-    height: 100px;
-    width: 240px;
+    /* height: 100px;
+    width: 240px; */
+    height: 10vh;
 }
 
 /* ESCONDIENDO EL H1 */
@@ -77,21 +78,21 @@ nav li {
     background-size: cover;
 }
 
-/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA */
+/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. OCULTO LA IMÁGEN DE FONDO PORQUE NO CONSIGO UNA QUE ME HAGA BUEN CONTRASTE CON LOS TEXTOS */
 .mainHistoria {
     font-weight: 700;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
-    height: 600px;
-    /* background-image: url(../img/fondo2.jpg); */
+    /* height: 600px;
+    background-image: url(../img/fondo2.jpg);
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     display: grid;
-    grid-template-areas: 
-    "historia1 historia2"
-    "historia3 historia3"
+    grid-template-areas:
+        "historia1 historia2"
+        "historia3 historia3"
     ;
 }
 
@@ -108,14 +109,17 @@ footer ul li {
 
 /* PÁRRAFOS HISTORIA */
 .historia1 {
+    padding: 20px;
     grid-area: historia1;
 }
 
 .historia2 {
+    padding: 20px;
     grid-area: historia2;
 }
 
 .historia3 {
+    padding: 20px;
     grid-area: historia3;
 }
 
@@ -141,7 +145,18 @@ footer ul li {
     transform: translateY(3px);
 }
 
-/* CORRIGIENDO UN PADDING IZQ QUE ME METIÓ EL BS NO SE POR QUÉ */
-.redes {
-    padding: 0;
+/* MEDIA QUERIES: MOSTRANDO HISTORIAS EN 1 SOLA COLUMNA. NO CONSEGUÍ HACER RESPONSIVE EL BACKGROUND IMAGE DEL INDEX, POR ESO LO OCULTO */
+@media (max-width: 650px) {
+    .mainIndex {
+        background-image: none;
+    }
+
+    .mainHistoria {
+        display: grid;
+        grid-template-areas: 
+        "historia1"
+        "historia2"
+        "historia3";
+    }
+
 }
