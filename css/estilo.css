@@ -56,6 +56,7 @@ nav {
     margin-right: 50px;
 }
 
+
 /* ITEMS DE LA LISTA DE LINKS DEL NAV */
 nav li {
     display: inline-block;
@@ -80,7 +81,6 @@ nav li {
 
 /* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. OCULTO LA IMÁGEN DE FONDO PORQUE NO CONSIGO UNA QUE ME HAGA BUEN CONTRASTE CON LOS TEXTOS */
 .mainHistoria {
-    font-weight: 700;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
