@@ -1,0 +1,38 @@
+/* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL Y ACOMODANDO LOGO Y NAV CON FLEX */
+header {
+    background-color: $bg-color1;
+    border-bottom: 4px white solid;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ACHICANDO UN POCO EL LOGO QUE CONSEGUÍ */
+.logo {
+    height: 10vh;
+}
+
+/* ESCONDIENDO EL H1 */
+h1 {
+    display: none;
+}
+
+nav {
+    /* SEPARANDO UN POCO EL NAV DEL BORDE */
+    margin-right: 50px;
+
+    /* ESTILO A LOS LINKS DEL NAV */
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: $navlink-color;
+    }
+
+    /* ITEMS DE LA LISTA DE LINKS DEL NAV */
+    li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+    }
+}

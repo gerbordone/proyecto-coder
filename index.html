@@ -20,22 +20,30 @@
 <body>
     <!-- HEADER: TÍTULO PARA MOTOR DE BÚSQUEDA, LOGO Y BARRA NAV -->
     <header>
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo de la empresa"></a>
         <h1 class="encabezado">Boken Sushi</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="html/historia.html">NUESTRA HISTORIA</a></li>
-                <li><a href="html/carta.pdf" target="_blank">CARTA</a></li>
-                <li><a href="html/eventos.html">CATERING Y EVENTOS</a></li>
-                <li><a href="html/contacto.html">CONTACTO</a></li>
-            </ul>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo de la empresa"></a>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/historia.html">HISTORIA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/carta.pdf" target="_blank">CARTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/eventos.html">EVENTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- MAIN: FOTO DE FONDO Y ALGÚN BOTÓN PARA PEDIR -->
     <section class="mainIndex">
-        <button class="boton"><a href="https://bokensushi.masdelivery.com/" target="_blank">Hacé tu pedido acá</a></button>
+        <button class="boton"><a href="https://bokensushi.masdelivery.com/" target="_blank">Pedí online</a></button>
     </section>
 
     <!-- FOOTER: REDES Y DERECHOS -->

@@ -1,0 +1,24 @@
+/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. OCULTO LA IMÁGEN DE FONDO PORQUE NO CONSIGO UNA QUE ME HAGA BUEN CONTRASTE CON LOS TEXTOS */
+.mainHistoria {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: "historia1 historia2" "historia3 historia3";
+}
+
+/* PÁRRAFOS HISTORIA */
+.historia1 {
+    padding: 20px;
+    grid-area: historia1;
+}
+
+.historia2 {
+    padding: 20px;
+    grid-area: historia2;
+}
+
+.historia3 {
+    padding: 20px;
+    grid-area: historia3;
+}

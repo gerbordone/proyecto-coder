@@ -1,0 +1,14 @@
+/* MEDIA QUERIES: MOSTRANDO HISTORIAS EN 1 SOLA COLUMNA. NO CONSEGUÍ HACER RESPONSIVE EL BACKGROUND IMAGE DEL INDEX, POR ESO LO OCULTO */
+@media (max-width: 650px) {
+    .mainIndex {
+        background-image: none;
+    }
+
+    .mainHistoria {
+        display: grid;
+        grid-template-areas:
+            "historia1"
+            "historia2"
+            "historia3";
+    }
+}
