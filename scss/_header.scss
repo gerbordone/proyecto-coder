@@ -1,11 +1,8 @@
 /* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL Y ACOMODANDO LOGO Y NAV CON FLEX */
 header {
-    background-color: $bg-color1;
-    border-bottom: 4px white solid;
-    padding-bottom: 20px;
+    background-color: transparent;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* ACHICANDO UN POCO EL LOGO QUE CONSEGUÍ */
@@ -19,14 +16,14 @@ h1 {
 }
 
 nav {
-    /* SEPARANDO UN POCO EL NAV DEL BORDE */
-    margin-right: 50px;
+    margin: 0;
 
     /* ESTILO A LOS LINKS DEL NAV */
     a {
-        font-weight: bold;
+        font-size: 23px !important;
         text-decoration: none;
-        color: $navlink-color;
+        color: $navlink-color !important;
+        font-family: $font2 !important;
     }
 
     /* ITEMS DE LA LISTA DE LINKS DEL NAV */

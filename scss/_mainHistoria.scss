@@ -1,24 +1,101 @@
-/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. OCULTO LA IMÁGEN DE FONDO PORQUE NO CONSIGO UNA QUE ME HAGA BUEN CONTRASTE CON LOS TEXTOS */
+/* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. */
 .mainHistoria {
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
     display: grid;
-    grid-template-areas: "historia1 historia2" "historia3 historia3";
+    grid-template-areas:
+        "historia1 imagen1"
+        "imagen2 historia2"
+        "historia3 imagen3";
 }
 
-/* PÁRRAFOS HISTORIA */
+/* CENTRANDO Y ESTILO PÁRRAFOS HISTORIA */
 .historia1 {
-    padding: 20px;
+    padding: 40px;
+    height: 100vh;
+    width: 50vw;
     grid-area: historia1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        padding-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .historia2 {
-    padding: 20px;
+    padding: 40px;
     grid-area: historia2;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        padding-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .historia3 {
-    padding: 20px;
+    padding: 40px;
     grid-area: historia3;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        padding-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* AJUSTANDO IMÁGENES */
+.imagen1 {
+    grid-area: imagen1;
+
+    img {
+        width: 50vw;
+        height: 100vh;
+    }
+}
+
+.imagen2 {
+    grid-area: imagen2;
+
+    img {
+        width: 50vw;
+        height: 100vh;
+    }
+}
+
+.imagen3 {
+    grid-area: imagen3;
+
+    img {
+        width: 50vw;
+        height: 100vh;
+    }
 }

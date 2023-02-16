@@ -1,14 +1,66 @@
-/* MEDIA QUERIES: MOSTRANDO HISTORIAS EN 1 SOLA COLUMNA. NO CONSEGUÍ HACER RESPONSIVE EL BACKGROUND IMAGE DEL INDEX, POR ESO LO OCULTO */
-@media (max-width: 650px) {
-    .mainIndex {
-        background-image: none;
+@media (max-width: 768px) {
+
+    /* ACOMODANDO MENÚ HAMBURGUESA HACIA LA IZQUIERDA CON FLEX */
+    header {
+        display: flex;
+        justify-content: space-between;
     }
 
+    /* OCULTANDO IMÁGENES Y AJUSTANDO LOS TAMAÑOS */
     .mainHistoria {
+        background-image: none;
+        background-color: black;
         display: grid;
         grid-template-areas:
             "historia1"
             "historia2"
             "historia3";
+
+        .historia1 {
+            height: auto;
+            width: auto;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        .historia2 {
+            height: auto;
+            width: auto;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        .historia3 {
+            height: auto;
+            width: auto;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        .imagen1 {
+            img {
+                display: none;
+            }
+        }
+
+        .imagen2 {
+            img {
+                display: none;
+            }
+        }
+
+        .imagen3 {
+            img {
+                display: none;
+            }
+        }
     }
+
+
 }
