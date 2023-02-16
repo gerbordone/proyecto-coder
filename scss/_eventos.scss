@@ -1,17 +1,21 @@
+/* MIXIN */
+@mixin subtitulos {
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ESTILO A LOS TEXTOS */
 .mainEventos {
     text-align: center;
     padding: 40px;
 
     h2 {
-        padding-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
+        @include subtitulos;
     }
 
     h3 {
-        padding-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
+        @include subtitulos;
         font-size: 20px;
     }
 

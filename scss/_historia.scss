@@ -1,3 +1,29 @@
+/* MIXIN */
+@mixin historias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    height: 100vh;
+    width: 50vw;
+
+    h2 {
+        padding-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@mixin imagenHistorias {
+    width: 50vw;
+    height: 100vh;
+}
+
 /* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. */
 .mainHistoria {
     text-align: center;
@@ -10,66 +36,18 @@
 
 /* CENTRANDO Y ESTILO PÁRRAFOS HISTORIA */
 .historia1 {
-    padding: 40px;
-    height: 100vh;
-    width: 50vw;
     grid-area: historia1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h2 {
-        padding-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    p {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    @include historias;
 }
 
 .historia2 {
-    padding: 40px;
     grid-area: historia2;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h2 {
-        padding-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    p {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    @include historias;
 }
 
 .historia3 {
-    padding: 40px;
     grid-area: historia3;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h2 {
-        padding-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    p {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    @include historias;
 }
 
 /* AJUSTANDO IMÁGENES */
@@ -77,8 +55,7 @@
     grid-area: imagen1;
 
     img {
-        width: 50vw;
-        height: 100vh;
+        @include imagenHistorias;
     }
 }
 
@@ -86,8 +63,7 @@
     grid-area: imagen2;
 
     img {
-        width: 50vw;
-        height: 100vh;
+        @include imagenHistorias;
     }
 }
 
@@ -95,7 +71,6 @@
     grid-area: imagen3;
 
     img {
-        width: 50vw;
-        height: 100vh;
+        @include imagenHistorias;
     }
 }

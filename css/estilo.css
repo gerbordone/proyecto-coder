@@ -107,6 +107,7 @@ nav li {
   color: white;
 }
 
+/* MIXIN */
 /* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. */
 .mainHistoria {
   text-align: center;
@@ -116,13 +117,13 @@ nav li {
 
 /* CENTRANDO Y ESTILO PÁRRAFOS HISTORIA */
 .historia1 {
-  padding: 40px;
-  height: 100vh;
-  width: 50vw;
   grid-area: historia1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40px;
+  height: 100vh;
+  width: 50vw;
 }
 .historia1 h2 {
   padding-bottom: 20px;
@@ -135,13 +136,13 @@ nav li {
 }
 
 .historia2 {
-  padding: 40px;
   grid-area: historia2;
-  height: 100vh;
-  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40px;
+  height: 100vh;
+  width: 50vw;
 }
 .historia2 h2 {
   padding-bottom: 20px;
@@ -154,13 +155,13 @@ nav li {
 }
 
 .historia3 {
-  padding: 40px;
   grid-area: historia3;
-  height: 100vh;
-  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40px;
+  height: 100vh;
+  width: 50vw;
 }
 .historia3 h2 {
   padding-bottom: 20px;
@@ -197,6 +198,8 @@ nav li {
   height: 100vh;
 }
 
+/* MIXIN */
+/* ESTILO A LOS TEXTOS */
 .mainEventos {
   text-align: center;
   padding: 40px;
@@ -213,6 +216,19 @@ nav li {
   font-size: 20px;
 }
 .mainEventos p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mainContacto {
+  text-align: center;
+  padding: 40px;
+}
+.mainContacto h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mainContacto p {
   padding-left: 40px;
   padding-right: 40px;
 }
