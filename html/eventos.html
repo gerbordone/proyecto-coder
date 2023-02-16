@@ -44,15 +44,40 @@
 
     <!-- H2, DESCRIPCIÓN Y H3 + FORM -->
     <main>
-        <h2>Servicio de Catering & Eventos</h2>
-        <p>Además de nuestro clásico servicio de delivery & take away, ofrecemos catering & eventos. ¿Tenés algún evento
-            especial? Eventos privados, corporativos, recitales o eventos deportivos, fiestas electrónicas y festivales
-            de gran escala. Te damos la opción de contratar nuestro servicio especial. Lo hacemos a tu medida sean
-            cuales sean tus pretenciones. Disponemos de grandes profesionales en todas las áres relacionadas a catering
-            & eventos. Servicio de calidad, experiencias increíbles y momentos inolvidables. Todos tus comensales
-            estarán satisfechos.</p>
-        <h3>Dejános tus datos y nos contactaremos a la brevedad!</h3>
-        <!-- FORMULARIO -->
+        <div class="mainEventos">
+            <h2>Servicio de Catering & Eventos</h2>
+            <p>Además de nuestro clásico servicio de delivery & take away, ofrecemos catering & eventos. ¿Tenés algún
+                evento
+                especial? Eventos privados, corporativos, recitales o eventos deportivos, fiestas electrónicas y
+                festivales
+                de gran escala. Te damos la opción de contratar nuestro servicio especial. Lo hacemos a tu medida sean
+                cuales sean tus pretenciones. Disponemos de grandes profesionales en todas las áres relacionadas a
+                catering
+                & eventos. Servicio de calidad, experiencias increíbles y momentos inolvidables. Todos tus comensales
+                estarán satisfechos.</p>
+            <h3>Dejános tus datos y nos contactaremos a la brevedad!</h3>
+            <!-- FORMULARIO -->
+                <form class="containerForm" action="">
+                    <div class="mb-3 formEventos">
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <div class="mb-3 formEventos">
+                        <input type="nombre" class="form-control" id="nombre" placeholder="Germán Bordone" required>
+                    </div>
+                    <div class="mb-3 formEventos">
+                        <input type="tel" class="form-control" id="tel" placeholder="11-3218-4443" required>
+                    </div>
+                    <div class="mb-3 formEventos">
+                        <textarea class="form-control" id="texto" placeholder="Escribí acá tu mensaje" rows="4"
+                            required></textarea>
+                    </div>
+
+                    <div class="mb-3 botonEventos">
+                        <button type="button" class="btn btn-info w-100 fs-5">Enviar mensaje</button>
+                    </div>
+                </form>
+
+            </div>
     </main>
 
     <!-- FOOTER: REDES Y DERECHOS -->
