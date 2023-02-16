@@ -37,7 +37,7 @@ a {
   color: rgba(128, 128, 128, 0.397);
 }
 
-/* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL Y ACOMODANDO LOGO Y NAV CON FLEX */
+/* MIXIN */ /* SEPARANDO UN POCO EL HEADER DEL CONTENIDO PRINCIPAL Y ACOMODANDO LOGO Y NAV CON FLEX */
 header {
   background-color: transparent;
   padding: 20px;
@@ -107,7 +107,6 @@ nav li {
   color: white;
 }
 
-/* MIXIN */
 /* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. */
 .mainHistoria {
   text-align: center;
@@ -198,7 +197,6 @@ nav li {
   height: 100vh;
 }
 
-/* MIXIN */
 /* ESTILO A LOS TEXTOS */
 .mainEventos {
   text-align: center;
