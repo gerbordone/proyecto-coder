@@ -1,0 +1,44 @@
+.mainCarta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.pedidos {
+    margin: 20px;
+    padding: 20px;
+}
+
+.carta {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* ESTILO AL BOTÓN DEL MAIN + TRANSFORMACIÓN Y TRANSICIÓN */
+.boton {
+    color: $font-color;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(to top right, #fc00ff, #00dbde);
+    border: 0;
+    border-radius: 30px;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+
+    a {
+        color: $navlink-color;
+    }
+
+}

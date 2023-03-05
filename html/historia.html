@@ -10,6 +10,8 @@
     <!-- BS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- FAVICON -->
@@ -31,7 +33,7 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
                         <li class="nav-item"><a class="nav-link active" href="historia.html">HISTORIA</a></li>
-                        <li class="nav-item"><a class="nav-link" href="carta.pdf" target="_blank">CARTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carta.html">CARTA</a></li>
                         <li class="nav-item"><a class="nav-link" href="eventos.html">EVENTOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
                     </ul>
@@ -43,7 +45,7 @@
 
     <!-- MAIN: IMÁGEN DE FONDO Y 3 H2 -->
     <section class="mainHistoria">
-        <div class="historia1">
+        <div class="historia1" data-aos="fade-right">
             <h2>Nuestra aventura empresarial</h2>
             <p>Böken nace en el año 2016. Abrimos nuestro primer local de delivery en el barrio de Villa Crespo en
                 la
@@ -68,11 +70,11 @@
                 oferta gastronómica japonesa y nikkei de la ciudad. </p>
         </div>
 
-        <div class="imagen1">
+        <div class="imagen1" data-aos="fade-left">
             <img src="../img/imagen1.jpg" alt="wok de verduras">
         </div>
 
-        <div class="historia2">
+        <div class="historia2" data-aos="fade-left">
             <h2>Pasado, presente y futuro de nuestro sushi</h2>
             <p>Nacimos en 2016 pero la historia de nuestro sushi data de años atrás. Nuestro producto es el
                 resultado de
@@ -99,11 +101,11 @@
                 gastronómica y sus distintas opciones.</p>
         </div>
 
-        <div class="imagen2">
+        <div class="imagen2" data-aos="fade-right">
             <img src="../img/imagen2.jpg" alt="roll vegano">
         </div>
 
-        <div class="historia3">
+        <div class="historia3" data-aos="fade-right">
             <h2>Nuestra misión culinaria</h2>
             <p>Nuestro objetivo en la gastronomía es brindar una experiencia sensorial tanto para el paladar como
                 para
@@ -130,7 +132,7 @@
                 ofrece una experiencia que toda persona debería vivir. </p>
         </div>
 
-        <div class="imagen3">
+        <div class="imagen3" data-aos="fade-left">
             <img src="../img/imagen3.jpg" alt="niguiri de morrón">
         </div>
 
@@ -170,7 +172,14 @@
                 href="https://www.instagram.com/gerbordone/" target="_blank">Germán
                 Bordone</a></p>
     </footer>
-    <!-- JS BSS -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- BS JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

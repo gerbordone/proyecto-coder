@@ -12,6 +12,8 @@ body {
   background-color: black;
   position: relative;
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   color: darkgray;
@@ -59,6 +61,13 @@ nav {
   /* ESTILO A LOS LINKS DEL NAV */
   /* ITEMS DE LA LISTA DE LINKS DEL NAV */
 }
+nav .container-fluid {
+  display: flex !important;
+  flex-wrap: inherit !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  text-align: end;
+}
 nav a {
   font-size: 23px !important;
   text-decoration: none;
@@ -83,28 +92,6 @@ nav li {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-}
-
-/* ESTILO AL BOTÓN DEL MAIN + TRANSFORMACIÓN Y TRANSICIÓN */
-.boton {
-  color: darkgray;
-  padding: 12px 24px;
-  font-size: 40px;
-  font-weight: 700;
-  background-image: linear-gradient(to top right, black, #2B2B2B, #535353, #8F8E8E);
-  border: 0;
-  border-radius: 30px;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
-}
-.boton:hover {
-  cursor: pointer;
-  transform: translateY(-3px);
-}
-.boton:active {
-  transform: translateY(3px);
-}
-.boton a {
-  color: white;
 }
 
 /* ACÁ ESTILO Y GRID PARA ORDENAR LOS PÁRRAFOS HISTORIA. */
@@ -195,6 +182,47 @@ nav li {
 .imagen3 img {
   width: 50vw;
   height: 100vh;
+}
+
+.mainCarta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.pedidos {
+  margin: 20px;
+  padding: 20px;
+}
+
+.carta {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* ESTILO AL BOTÓN DEL MAIN + TRANSFORMACIÓN Y TRANSICIÓN */
+.boton {
+  color: darkgray;
+  padding: 12px 24px;
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(to top right, #fc00ff, #00dbde);
+  border: 0;
+  border-radius: 30px;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+.boton:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+.boton:active {
+  transform: translateY(3px);
+}
+.boton a {
+  color: white;
 }
 
 /* ESTILO A LOS TEXTOS */

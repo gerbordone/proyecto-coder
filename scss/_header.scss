@@ -18,6 +18,14 @@ h1 {
 nav {
     margin: 0;
 
+    .container-fluid {
+        display: flex !important;
+        flex-wrap: inherit !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        text-align: end;
+    }
+
     /* ESTILO A LOS LINKS DEL NAV */
     a {
         font-size: 23px !important;

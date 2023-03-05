@@ -11,28 +11,3 @@
     background-attachment: fixed;
     background-size: cover;
 }
-
-/* ESTILO AL BOTÓN DEL MAIN + TRANSFORMACIÓN Y TRANSICIÓN */
-.boton {
-    color: $font-color;
-    padding: 12px 24px;
-    font-size: 40px;
-    font-weight: 700;
-    background-image: linear-gradient(to top right, black, #2B2B2B, #535353, #8F8E8E);
-    border: 0;
-    border-radius: 30px;
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
-
-    &:hover {
-        cursor: pointer;
-        transform: translateY(-3px);
-    }
-
-    &:active {
-        transform: translateY(3px);
-    }
-
-    a {
-        color: $navlink-color;
-    }
-}
