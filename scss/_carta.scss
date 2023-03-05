@@ -5,6 +5,11 @@
     text-align: center;
     padding: 20px;
     margin: 20px;
+    
+    h2 {
+        @include subtitulos;
+        padding-bottom: 0;
+    }
 }
 
 .pedidos {

@@ -192,6 +192,12 @@ nav li {
   padding: 20px;
   margin: 20px;
 }
+.mainCarta h2 {
+  padding-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
 
 .pedidos {
   margin: 20px;
